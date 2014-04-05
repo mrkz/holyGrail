@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
-from dict_input import meximons, dame_meximon, meximon_sin_datos, copy
+from dict_input import meximons, dame_meximon, meximon_sin_datos, copy, set_meximon
 # Exercise 4
 #
 # El trabajo en este ejercicio consiste en convertirte en un maestro
@@ -57,7 +57,7 @@ def wild_meximon():
 
 
 def modifica_meximon(llave, datos):
-	if llave in meximons and datos.has_key('ubicaion') and\
+	if llave in meximons and datos.has_key('ubicacion') and\
 	   datos.has_key('peso') and datos.has_key('descripcion'):
 	   set_meximon(llave,datos)
 	else:
