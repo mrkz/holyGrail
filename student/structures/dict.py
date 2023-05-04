@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 from dict_input import meximons, dame_meximon, meximon_sin_datos, copy, set_meximon
+
+
 # Exercise 4
 #
 # El trabajo en este ejercicio consiste en convertirte en un maestro
@@ -43,35 +45,30 @@ from dict_input import meximons, dame_meximon, meximon_sin_datos, copy, set_mexi
 
 # dame_meximon() => regresa una tupla con los valores (llave, {datos})
 def wild_meximon():
-	meximon = dame_meximon()
-	print """\
-%s salvaje ha aparecido!
- Ubicación: %s
- Peso: %s
- Descripción: %s
-""" % (meximon[0],
-	   meximon[1]['ubicacion'],
-	   meximon[1]['peso'],
-	   meximon[1]['descripcion'])
-	raw_input()
+    meximon = dame_meximon()
+    print(f"{meximon[0]} salvaje ha aparecido!\n"
+          f"Ubicación: {meximon[1]['ubicacion']}\n"
+          f"Peso: {meximon[1]['peso']}\n"
+          f"Descripción: {meximon[1]['descripcion']}")
+    input()
 
 
 def modifica_meximon(llave, datos):
-	if llave in meximons and datos.has_key('ubicacion') and\
-	   datos.has_key('peso') and datos.has_key('descripcion'):
-	   set_meximon(llave,datos)
-	else:
-		print "Datos para el dicciodex no válidos"
+    if llave in meximons and datos.has_key('ubicacion') and \
+            datos.has_key('peso') and datos.has_key('descripcion'):
+        set_meximon(llave, datos)
+    else:
+        print("Datos para el dicciodex no válidos")
+
 
 # Escribe tu código a partir de aquí
 
 
-
 def main():
-	# llama a tus funciones y haz tu mágia.
-	while len(copy) > 0 and meximon_sin_datos:
-		wild_meximon()
-	
+    # llama a tus funciones y haz tu mágia.
+    while len(copy) > 0 and meximon_sin_datos:
+        wild_meximon()
+
 
 if __name__ == '__main__':
-	main()
+    main()

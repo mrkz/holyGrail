@@ -38,14 +38,12 @@
 # adipiscing, ante ac consectetur tristique, velit tortor sagittis libero,
 # at consequat libero orci vel tellus.
 
-cevag h"FlagnkReebe: abg n punapr..."
+cevag("FlagnkReebe: abg n punapr...")
 rkvg(1)
 
-cevag h"""
-# Ybf nepuvibf __vavg__.cl fba erdhrevqbf cnen dhr Clguba
-# chrqn gengne ybf qverpgbevbf pbzb cndhrgrf pbagrarqberf,
-# rfgr crezvgr grare pbqvtbf zrwbe rfgehpghenqbf.
-
-# Ybf nepuvibf __vavg.cl__ trarenyzragr rfgna inpvbf, creb
-# gnzovra chrqra grare pbqvtb cnen yn vavpvnyvmnpvba qry cndhrgr
-# b qr yn inevnoyr __nyy__ (ab phovregn ra ry gnyyre).\a\a"""
+cevag("# Ybf nepuvibf __vavg__.cl fba erdhrevqbf cnen dhr Clguba" \
+      "# chrqn gengne ybf qverpgbevbf pbzb cndhrgrf pbagrarqberf," \
+      "# rfgr crezvgr grare pbqvtbf zrwbe rfgehpghenqbf." \
+      "# Ybf nepuvibf __vavg.cl__ trarenyzragr rfgna inpvbf, creb" \
+      "# gnzovra chrqra grare pbqvtb cnen yn vavpvnyvmnpvba qry cndhrgr" \
+      "# b qr yn inevnoyr __nyy__ (ab phovregn ra ry gnyyre).\a\a")

@@ -22,6 +22,7 @@ ans_life = 42
 
 
 def main():
+	print("main funciones")
 	# llama a tu función aquí
 
 

@@ -16,9 +16,9 @@
 
 def main():
 	foo = "Hola!, soy la variable 'foo' y soy una cadena"
-	print foo
+	print(foo)
 	foo = "ahora 'foo' es otra cadena"
-	print foo
+	print(foo)
 	var = """\
 Soy una cadena de tipo parrafo,
 tal como me escriben, es como aparezco
@@ -26,12 +26,13 @@ tal como me escriben, es como aparezco
 
 
 ¿lo ves?"""
-	print var
+	print(var)
 	# cambiando el tipo de 'var'
 	var = 42
 
 	# También podemos utilizar el pre-formateo tipo C
-	print "The answer to the life, the universe and everything is %d" % var
+	print("The answer to the life, the universe and everything is %d" % var)
+
 
 if __name__ == '__main__':
 	main()
