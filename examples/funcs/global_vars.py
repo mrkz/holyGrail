@@ -7,17 +7,21 @@
 
 foo = 14
 
-def deep_tought(foo = 999):
-	print "el valor de 'foo' es", foo
+
+def deep_tought(foo=999):
+	print("el valor de 'foo' es", foo)
 	earth()
+
 
 def earth():
 	global foo
-	print "el valor de 'foo' es", foo
+	print("el valor de 'foo' es", foo)
+
 
 def main():
 	"""Soy main, y esta es mi documentación"""
 	deep_tought()
+
 
 if __name__ == '__main__':
 	main()

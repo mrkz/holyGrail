@@ -25,11 +25,11 @@ def revisa_repeticiones(wish_list):
 	for element in wish_list:
 		k_veces = wish_list.count(element)
 		if (last_element != element) and k_veces > 1:
-			print "'%s' se repite %d vece(s)" % (element, k_veces)
+			print("'%s' se repite %d vece(s)" % (element, k_veces))
 			flag = True
 		last_element = element
 	if not flag:
-		print "Felicidades, tu lista no repite ningún elemento \o/"
+		print("Felicidades, tu lista no repite ningún elemento \o/")
 
 # escribe tu código a partir de aquí
 
@@ -37,6 +37,7 @@ def revisa_repeticiones(wish_list):
 def main():
 	# llama a tus funciones y haz tu mágia.
 	revisa_repeticiones(lista2)
+
 
 if __name__ == '__main__':
 	main()

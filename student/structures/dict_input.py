@@ -3,7 +3,6 @@
 from random import shuffle as mix
 import random
 
-
 meximons = {
 	"Nopalsaur": {'ubicacion': None, 'peso': None, 'descripcion': None},
 	"Charmando": {'ubicacion': "Las montañas armadas", 'peso': "4 costales de frijoles", 'descripcion': "Un dragón (que si puede volar), tiene una pequeña flama en su cola, si esta se apaga, Charmando perderá la memoria y con ella su experiencia en batallas."},
@@ -50,6 +49,8 @@ meximons = {
 }
 copy = meximons.copy()
 meximon_sin_datos = True
+
+
 def dame_meximon():
 	for key in copy:
 		return (key, copy.pop(key))
@@ -57,6 +58,7 @@ def dame_meximon():
 
 def set_meximon(llave,datos):
 	meximons[llave] = datos
+
 
 def actualiza_dicciodex():
 	meximon_sin_datos = False
@@ -68,8 +70,9 @@ def actualiza_dicciodex():
 
 def main():
 	"""not made for direct call"""
-	print "Error: código no apto para llamada directa"
+	print("Error: código no apto para llamada directa")
 	exit(1)
+
 
 if __name__ == '__main__':
 	main()
